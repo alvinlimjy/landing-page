@@ -50,3 +50,44 @@ body {
     font-size: 16px; /* Optional: Add text styling */
     color: black; /* Optional: Text color */
 }
+
+/* Information section */
+.informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.informations .title{
+    display: flex;
+    justify-content: center;
+}
+
+.informations .feature-list{
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap if they exceed the container width */
+    justify-content: center; /* Centers items horizontally */
+    gap: 52px; /* Adds spacing between items */
+    margin-top: 32px; /* Adds spacing between the title and items */
+}
+
+.informations .feature{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    width: 100px; /* Fixed width */
+
+    gap: 16px;
+    text-align: center; /* Center text inside the box */
+}
+
+.informations .feature img {
+    max-width: 100%; /* Ensure the image fits within the box */
+    max-height: 100%; /* Ensure the image fits within the box */
+    object-fit: cover; /* Crop the image to fill the box if necessary */
+}
+
+
