@@ -1,3 +1,7 @@
+body {
+    font-family: roboto,sans-serif;
+}
+
 /* Header Layout*/
 .header {
     display: flex;
@@ -22,4 +26,27 @@ body {
 .navigation a {
     text-decoration: none; 
     color: black; 
+}
+
+/* Hero Section Layout */
+.hero-section {
+    display: flex; 
+    justify-content: space-between;
+    margin: 32px 0;
+    gap: 16px;
+}
+
+.hero-section .text{
+    width: 50%;
+}
+
+.hero-section .image {
+    flex: 1;
+    flex-shrink: 0;
+    background-color: lightgray; /* Set a background color for the box */
+    display: flex; /* Center any content inside the box */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    font-size: 16px; /* Optional: Add text styling */
+    color: black; /* Optional: Text color */
 }
